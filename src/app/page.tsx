@@ -1,22 +1,16 @@
 'use client'
 
-import Image from "next/image";
-import { useState } from "react";
-import TodoCard from "@/component/index/TodoCard";
-// 1. 先跑一個陣列含有需要數量的undifed
-// 2. 在生成html那邊，跑map做陣列
-// const todoList = [{}]
-// todoCard is a component
+import TodoApp from "@/component/index/TodoApp";
+import '@/style/index.css';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20"> 
-        <div> 123</div>
+    <div className="bg-[#F2F4F7] font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-10 gap-8 sm:p-10"> 
+        <div className="text-[24px] font-[800]">待辦事項</div>
       {/* <main> */}
-        <TodoCard
-          cardDetail={{title:'今日任務', description:'今天沒事但還是想做點什麼', type:['程式','日常','運動']}}
-          subTask={['好初看漫畫','順便去板新站URLiving','圖書館做瑣事']}
-        />
+      <div>
+        <TodoApp/>
+      </div>
       {/* </main> */}
       {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
