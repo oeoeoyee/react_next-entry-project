@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+    width: 348px;
+    min-height: 255px;
+    padding: 20px;
+}
